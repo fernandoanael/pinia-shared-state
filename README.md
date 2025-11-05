@@ -2,16 +2,16 @@
 
 [![npm (tag)](https://img.shields.io/npm/v/pinia-shared-state?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/pinia-shared-state) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/pinia-shared-state?style=flat&colorA=000000&colorB=000000) ![NPM](https://img.shields.io/npm/l/pinia-shared-state?style=flat&colorA=000000&colorB=000000)
 
-Sync your Pinia state across browser tabs. Supports Vue 2 and 3.
+Sync your Pinia state across browser tabs.
 
 ## Requirements
 
-- vue ^2.6.14 || ^3.2.0
+- vue ^3.5.11
 
 ## Install
 
 ```sh
-pnpm add pinia pinia-shared-state
+npm install pinia-shared-state
 ```
 
 ## Usage
@@ -52,8 +52,8 @@ const useStore = defineStore({
 Vanilla usage:
 
 ```ts
-import { onMounted, onUnmounted } from 'vue'
 import { share } from 'pinia-shared-state'
+import { onMounted, onUnmounted } from 'vue'
 import useStore from './store'
 
 const counterStore = useStore()
@@ -68,12 +68,6 @@ onMounted(() => {
 })
 ```
 
-## Credits
-
-- [pinia](https://pinia.esm.dev/) - 🍍 Intuitive, type safe, light and flexible Store for Vue using the composition api with DevTools support.
-- [vue-demi](https://github.com/vueuse/vue-demi/) - Creates Universal Library for Vue 2 & 3.
-- [broadcast-channel](https://github.com/pubkey/broadcast-channel) - BroadcastChannel to send data between different browser-tabs or nodejs-processes.
-
 ## License
 
-[MIT License](http://opensource.org/licenses/MIT).
+MIT
